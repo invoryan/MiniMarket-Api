@@ -5,5 +5,6 @@ export const EnvValidationConfig = Joi.object({
     DB_PORT: Joi.number().required(),
     DB_USERNAME: Joi.string().required(),
     DB_PASSWORD: Joi.string().required(),
-    DB_DATABASE: Joi.string().required()
+    DB_DATABASE: Joi.string().required(),
+    DB_SYNC: Joi.boolean().default(false)
 })
